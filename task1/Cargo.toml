@@ -1,0 +1,8 @@
+[package]
+name = "task1"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rhai = { version = "1.20.0", features = ["metadata"] }
+rustyline = "15.0.0"
