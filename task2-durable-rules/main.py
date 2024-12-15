@@ -1,3 +1,4 @@
+import time
 from durable.lang import *
 
 with ruleset('computers'):
