@@ -124,7 +124,10 @@
         <ObjectProperty IRI="#has_addon"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#has_propulsion"/>
+        <ObjectProperty IRI="#manufactured_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#powered_by"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#contract_finalized_at"/>
@@ -323,9 +326,14 @@
         <NamedIndividual IRI="#ExampleWarranty"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_propulsion"/>
+        <ObjectProperty IRI="#powered_by"/>
         <NamedIndividual IRI="http://webprotege.stanford.edu/RmUOUvGLcLP5S7dAEiryh4"/>
         <NamedIndividual IRI="#1100cc_H4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#manufactured_by"/>
+        <NamedIndividual IRI="#Volkswagen_Beetle"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RmUOUvGLcLP5S7dAEiryh4"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#given_name"/>
@@ -379,6 +387,10 @@
         <ObjectProperty IRI="http://webprotege.stanford.edu/R9DV9ShsgKU3W1RX5csW5fk"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#manufactured_by"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://webprotege.stanford.edu/R79xynq8wOFDMRsC0pwiame"/>
         <Class IRI="http://webprotege.stanford.edu/RbOemSBaoE0Dgzs3AkEv5T"/>
@@ -396,7 +408,11 @@
         <Class IRI="http://webprotege.stanford.edu/RbOemSBaoE0Dgzs3AkEv5T"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_propulsion"/>
+        <ObjectProperty IRI="#manufactured_by"/>
+        <Class IRI="http://webprotege.stanford.edu/R7PvZqCqXiX4VLXGKKvtq83"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#powered_by"/>
         <Class IRI="http://webprotege.stanford.edu/R7PvZqCqXiX4VLXGKKvtq83"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
@@ -416,7 +432,11 @@
         <Class IRI="http://webprotege.stanford.edu/RCXWGhYArQFzzmAqUJsGqi1"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_propulsion"/>
+        <ObjectProperty IRI="#manufactured_by"/>
+        <Class IRI="#Vendor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#powered_by"/>
         <Class IRI="#PropulsionMethod"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
